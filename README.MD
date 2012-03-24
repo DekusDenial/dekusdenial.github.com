@@ -35,7 +35,6 @@ This will run Sass on the /lib directory and generate `bootstrap-2.0.1.css`, `bo
 + **watch** - `rake watch`
 This is a convenience method for watching your Sass files and automatically building them whenever you save.
 
-
 Copyright and license
 ---------------------
 
