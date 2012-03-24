@@ -8,7 +8,7 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #ddd;
+      background:url(images/farmer.png) #E8E9E4;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
@@ -27,6 +27,60 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
+    .animation {
+      background-image: url("images/skills.png");
+      background-repeat:no-repeat;
+      width:195px;
+      height:196px;
+      position:relative;
+      margin:0 auto;
+    }
+
+    .sphere {
+      width:20px;
+      height:20px;
+      position:absolute;
+      background:black;
+      border-radius:50%;
+      left:30px;
+      top:30px;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC41NCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.54) 83%, rgba(0,0,0,0.65) 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(83%,rgba(0,0,0,0.54)), color-stop(100%,rgba(0,0,0,0.65)));
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 83%,rgba(0,0,0,0.65) 100%);
+      background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 83%,rgba(0,0,0,0.65) 100%);
+      background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 83%,rgba(0,0,0,0.65) 100%);
+      background: radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.54) 83%,rgba(0,0,0,0.65) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 );
+
+      -webkit-animation: blink 4s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes blink{
+      5%{-webkit-transform:scale(0.2);}
+      10% {left:60px;top:58px;-webkit-transform:scale(1);}
+      15%{-webkit-transform:scale(0.2);}
+      20%{left:88px;top:88px;-webkit-transform:scale(1);}
+      25%{-webkit-transform:scale(0.2);}
+      30%{left:118px;top:118px;-webkit-transform:scale(1);}
+      35%{-webkit-transform:scale(0.2);}
+      40%{left:148px;top:150px;-webkit-transform:scale(1);}
+      45%{-webkit-transform:scale(0.2);}
+      50%{left:174px;top:174px;-webkit-transform:scale(1);}
+      55%{-webkit-transform:scale(0.2);}
+      60%{left:148px;top:150px;-webkit-transform:scale(1);}
+      65%{-webkit-transform:scale(0.2);}
+      70%{left:118px;top:118px;-webkit-transform:scale(1);}
+      75%{-webkit-transform:scale(0.2);}
+      80%{left:88px;top:88px;-webkit-transform:scale(1);}
+      85%{-webkit-transform:scale(0.2);}
+      90% {left:60px;top:58px;-webkit-transform:scale(1);}
+      95%{-webkit-transform:scale(0.2);}
+    }
+
+
+
   </style>
 </head>
 
@@ -42,6 +96,11 @@
       Place to test out your HTML, CSS, and JavaScript, with supplementary support
     </div>
  
+    <div class="animation">
+      <div class="sphere"></div>
+    </div>
+
+
       <h2>License</h2>
       <pre>The MIT License (MIT)
 Copyright © 2012 Dekus Denial, http://dekusdenial.github.com
