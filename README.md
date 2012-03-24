@@ -7,19 +7,19 @@ I intended to add Twitter Boostrap as the fundamental framework + Compass CSS fr
 
 Quick Overview of the page
 --------------------------
-** Real-time Web evaluator
+### Real-time Web evaluator
 
-    Evaluate your HTML
-    Evaluate your custom CSS
-    Embed your JavaScript
-    Render into separate view
-    Work as one of my personal coder tool for web and quick demo
++ Evaluate your HTML
++ Evaluate your custom CSS
++ Embed your JavaScript
++ Render into separate view
++ Work as one of my personal coder tool for web and quick demo
 
-** Coming Soon
+### Coming Soon
 
 Reference
 ---------
-** Make sure you check out the followings:
+### Make sure you check out the followings:
 
 + http://twitter.github.com/bootstrap
 + https://github.com/jlong/sass-twitter-bootstrap
