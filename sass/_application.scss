@@ -1,3 +1,15 @@
+::-moz-selection {
+  background: #9A5AED;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #9A5AED;
+  color: #fff;
+  text-shadow: none;
+}
+
 .animation {
   bottom: 33px;
 }
@@ -9,4 +21,59 @@
   @include border-bottom-left-radius(2000px 50px);
   @include border-bottom-right-radius(50px 2000px);
   @include box-shadow(rgba(0,0,0,.5) 0 0 20px 1px);
+}
+
+.sprite-tweet-bird {
+    height: 80px;
+  }
+
+#twitter_update_list {
+  list-style: none;
+  margin-left: 110px;
+  padding: 15px;
+  width: 500px;
+  word-wrap: break-word;
+  position: relative;
+  @include single-transition(width, .3s, ease-in-out);
+  &::before {
+    content:'';
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #D9EDF7;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 27%;
+    z-index: 2;
+  }
+  &::after {
+    content:'';
+    display: inline-block;
+    border-top: 11px solid transparent;
+    border-right: 11px solid #BCE8F1;
+    border-bottom: 11px solid transparent;
+    position: absolute;
+    left: -12px;
+    top: 27%;
+    z-index: 1;
+  }
+  &:hover {
+    width: 700px;
+  }
+  a {
+    color: #555;
+  }
+}
+
+@media (max-width: 979px) {
+  .sprite-tweet-bird {
+    height: auto;
+  }
+  #twitter_update_list { 
+    width:45%;
+    @include single-transition(none);
+    &:hover {
+      width: 45%;
+    }
+  }
 }

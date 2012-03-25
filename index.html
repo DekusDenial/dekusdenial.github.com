@@ -11,6 +11,8 @@
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+  <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
+
   <link rel="stylesheet" href="stylesheets/screen.css">
   <!-- <link rel="stylesheet" href="stylesheets/bootstrap-responsive.css"> -->
   <style type="text/css">
@@ -19,6 +21,14 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=361911600507946";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <!-- <a href="https://github.com/DekusDenial/"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a> -->
 
@@ -51,8 +61,29 @@
         </div>
         <h1>Real-time Markup Evaluator</h1>
         <p>Place to test out your HTML, CSS, and JavaScript, with supplementary support.</p>
-        <p><a class="btn btn-info btn-large disabled">Try it &raquo;</a></p>
+        <p><a class="btn btn-info btn-large disabled">Coming Soon <!-- &raquo; --></a></p>
       </div>
+
+      <div class="row-fluid">
+        <div class="span10 sprite-tweet-bird">
+          <ul class="well alert-info" id="twitter_update_list"></ul>
+          <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/dekusdenial.json?callback=twitterCallback2&amp;count=1"></script>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12" style="text-align:left;">
+          <div class="fb-like" style="height: 30px;float:left;" data-href="http://dekusdenial.github.com" data-send="true" data-width="350" data-show-faces="true" data-font="segoe ui"></div>
+          <a href="https://twitter.com/DekusDenial" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true" data-leng="en">Follow @DekusDenial</a>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dekusdenial.github.com" data-text="Check out Dekus's GitHub Page & Portfolio!!" data-via="DekusDenial">Tweet</a>
+        </div>
+      </div>
+
+
+
+
+
       <div class="row-fluid">
         <div class="span4">
           <h2>Heading</h2>
