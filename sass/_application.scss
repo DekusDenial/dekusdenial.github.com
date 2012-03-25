@@ -1,0 +1,12 @@
+.animation {
+  bottom: 33px;
+}
+
+#mainContent {
+  border: 1px solid #ddd;
+  padding: 20px 40px 20px;
+  background-color: white;
+  @include border-bottom-left-radius(2000px 50px);
+  @include border-bottom-right-radius(50px 2000px);
+  @include box-shadow(rgba(0,0,0,.5) 0 0 20px 1px);
+}

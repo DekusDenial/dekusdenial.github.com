@@ -1,0 +1,29 @@
+body {
+  background: image-url("farmer.png") #E8E9E4;
+  padding: 60px 25px 25px;
+
+}
+
+.navbar-fixed-top .brand {
+  font-weight: bold;
+  color: #000;
+  @include text-shadow(rgba(255,255,255,.1) 1px 1px 0 , rgba(255,255,255,.125) 0 0 30px);
+}
+
+.hero-unit {
+  background: #e3e3e3;
+  @include diagonal-gradient();
+  border: 1px solid #ccc;
+  position: relative;
+  h1 {
+  	font-size: 50px;
+  }
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+  background-color: #0c0c0c;
+}
+
+.icon-white {
+	background-image: image-url("glyphicons-halflings-white.png");
+}
