@@ -65,6 +65,26 @@
   }
 }
 
+.justify {
+  text-align: justify;
+}
+
+#skillSlide {
+  padding: 10px 31px;
+  border: 1px solid #ddd;
+  @include box-shadow(rgba(0,0,0,0.3) 0px 7px 20px -2px);
+}
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+}
+
 @media (max-width: 979px) {
   .sprite-tweet-bird {
     height: auto;
@@ -77,3 +97,4 @@
     }
   }
 }
+
