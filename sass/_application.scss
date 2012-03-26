@@ -74,6 +74,10 @@
   text-align: justify;
 }
 
+.center {
+  text-align: center;
+}
+
 #skillSlide {
   padding: 10px 31px;
   border: 1px solid #ddd;
@@ -84,8 +88,12 @@
   }
 }
 
-
-
+.fig {
+  padding: 10px;
+  float: left;
+  background: white;
+  @include box-shadow(rgba(0,0,0,0.3) 0 0 10px 3px);
+}
 
 footer {
   text-align: center;
@@ -100,6 +108,45 @@ footer {
     @include single-transition(none);
     &:hover {
       width: 45%;
+    }
+  }
+}
+
+// About.html
+header {
+  h1 {
+    font-size: 45px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.sect {
+  p{ 
+    font-size: 14px;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  figure {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background: image-url("D.png") no-repeat top left;
+    figcaption {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: image-url("D.png") no-repeat top right;
+      @include single-transition(opacity, 0.4s, linear);
+      @include opacity(0);
+    }
+    &:hover figcaption {
+      @include opacity(1);
     }
   }
 }

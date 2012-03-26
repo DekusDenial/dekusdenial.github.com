@@ -1,12 +1,12 @@
 body {
   background: image-url("farmer.png") #E8E9E4;
   padding: 60px 25px 25px;
-
 }
 
 .navbar-fixed-top .brand {
   font-weight: bold;
   color: #000;
+  line-height: 21px;
   @include text-shadow(rgba(255,255,255,.1) 1px 1px 0 , rgba(255,255,255,.125) 0 0 30px);
 }
 
@@ -20,6 +20,18 @@ body {
   }
 }
 
+.navbar .nav.pills{
+  margin: 5px 0;
+  li { margin: 0 5px; }
+  a {
+    padding: 6px 10px;
+    @include border-radius(10px);
+    &:hover {
+      background-color: #4c4c4c;
+    }
+  }
+}
+
 .navbar .nav .active > a, .navbar .nav .active > a:hover {
   background-color: #0c0c0c;
 }
@@ -30,6 +42,9 @@ body {
 
 .row-fluid {
   margin: 10px auto;
+  [class*="span"] p {
+    font-size: 15px;
+  }
 }
 
 .carousel-control {
