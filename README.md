@@ -7,7 +7,7 @@ I intended to add Twitter Boostrap as the fundamental framework + Compass CSS fr
 
 Quick Overview of the page
 --------------------------
-### Real-time Web evaluator
+### Real-time Markup evaluator
 
 + Evaluate your HTML
 + Evaluate your custom CSS
