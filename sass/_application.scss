@@ -104,27 +104,6 @@ a.fig {
 }
 
 .upcase { text-transform: uppercase; }
-.shadows-into-light {
-  &, & p {
-    font-family: 'Shadows Into Light Two', Helvetica, Arial;
-    letter-spacing: 2px;
-    line-height: 100%;
-  }
-}
-
-div.shadows-into-light {
-  p {
-    line-height: 150%;
-    font-size: 20px ! important;
-    &::first-letter {
-      font-size: 50px;
-      font-weight: bold;
-      float: left;
-      padding: 15px 15px;
-    }
-  }
-}
-
 
 footer {
   text-align: center;
@@ -154,6 +133,27 @@ header {
   }
   p {
     font-size: 20px;
+  }
+}
+
+.shadows-into-light {
+  &, & p {
+    font-family: 'Shadows Into Light Two', Helvetica, Arial;
+    letter-spacing: 2px;
+    line-height: 100%;
+  }
+}
+
+div.shadows-into-light {
+  p {
+    line-height: 150%;
+    font-size: 20px ! important;
+    &::first-letter {
+      font-size: 50px;
+      font-weight: bold;
+      float: left;
+      padding: 15px 15px;
+    }
   }
 }
 
