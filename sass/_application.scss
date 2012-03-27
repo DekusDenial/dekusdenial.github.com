@@ -14,7 +14,7 @@
   bottom: 33px;
 }
 
-#mainContent {
+.content {
   border: 1px solid #ddd;
   padding: 20px 40px 20px;
   background-color: white;
@@ -90,10 +90,41 @@
 
 .fig {
   padding: 10px;
+  margin: 10px 20px;
   float: left;
   background: white;
   @include box-shadow(rgba(0,0,0,0.3) 0 0 10px 3px);
 }
+
+a.fig {
+  @include single-transition(all, 0.1s, linear);
+  &:hover {
+    @include scale(1.05);
+  }
+}
+
+.upcase { text-transform: uppercase; }
+.shadows-into-light {
+  &, & p {
+    font-family: 'Shadows Into Light Two', Helvetica, Arial;
+    letter-spacing: 2px;
+    line-height: 100%;
+  }
+}
+
+div.shadows-into-light {
+  p {
+    line-height: 150%;
+    font-size: 20px ! important;
+    &::first-letter {
+      font-size: 50px;
+      font-weight: bold;
+      float: left;
+      padding: 15px 15px;
+    }
+  }
+}
+
 
 footer {
   text-align: center;
@@ -114,10 +145,12 @@ footer {
 
 // About.html
 header {
+
   h1 {
-    font-size: 45px;
+    font-size: 70px;
     color: #444;
     margin-bottom: 10px;
+    line-height: 100%;
   }
   p {
     font-size: 20px;
@@ -128,7 +161,6 @@ header {
   p{ 
     font-size: 14px;
     padding: 0 20px;
-    overflow: hidden;
   }
   figure {
     margin: 0;
