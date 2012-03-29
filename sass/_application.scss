@@ -120,6 +120,13 @@ footer {
       width: 45%;
     }
   }
+
+  .fig {
+    float: none;
+    display: inline-block;
+  }
+
+  .tab-content label { float: none ! important; }
 }
 
 // About.html
@@ -144,10 +151,13 @@ header {
   }
 }
 
-article {
-  p {
-    font: 20px "Times New Roman", Times, serif;    
-  }
+article p, .tab-content p {
+    font-family: Georgia, Times, serif;
+    font-size: 18px ! important;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    padding: 0 ! important;
+    overflow: hidden;
 }
 
 .sect {
@@ -176,3 +186,35 @@ article {
   }
 }
 
+.tab-content {
+  ul {
+    margin-right: 25px;
+    li {
+      list-style: none;
+      label {
+        width: 150px;
+        float: left;
+      }
+    }
+  }
+
+  blockquote {
+    overflow: hidden;
+    margin-left: 30px;
+    .pull-right {
+      margin-right: 30px;
+    }
+    p {
+      font-style: italic;
+    }
+  }
+  .progress {
+    width: 60%;
+    margin: 0;
+    height: 30px;
+    .bar {
+      height: 100%;
+      font-size: 1em;
+    }
+  }
+}

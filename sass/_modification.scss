@@ -3,6 +3,10 @@ body {
   padding: 60px 25px 25px;
 }
 
+body, p{
+  font-family: Georgia, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .navbar-fixed-top .brand {
   font-weight: bold;
   color: #000;
@@ -16,7 +20,7 @@ body {
   border: 1px solid #ccc;
   position: relative;
   h1 {
-  	font-size: 50px;
+  	font-size: 40px;
   }
 }
 
