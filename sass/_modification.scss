@@ -40,6 +40,11 @@ body, p{
   background-color: #0c0c0c;
 }
 
+.navbar-fixed-top {
+  border-bottom: 1px solid #666;
+  @include box-shadow(#7db9e8 0 0 0 5px);
+}
+
 .icon-white {
 	background-image: image-url("glyphicons-halflings-white.png");
 }

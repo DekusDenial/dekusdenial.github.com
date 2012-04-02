@@ -15,7 +15,7 @@ Quick Overview of the page
 + Render into separate view
 + Work as one of my personal coder tool for web and quick demo
 
-### Coming Soon
+### [Find me here] (http://dekusdenial.github.com/Compact-Markup-Evaluator)
 
 Reference
 ---------
