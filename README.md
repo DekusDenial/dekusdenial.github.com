@@ -15,7 +15,14 @@ Quick Overview of the page
 + Render into separate view
 + Work as one of my personal coder tool for web and quick demo
 
-### [Find me here] (http://dekusdenial.github.com/Compact-Markup-Evaluator)
+[Find me here] (http://dekusdenial.github.com/Compact-Markup-Evaluator)
+
+### More HTML5 and CSS3 showcases
+Demonstrated in the following views/templates
+
++ Admin panel page
++ Simple login page
++ Plus some more from portfolio page as well
 
 Reference
 ---------
