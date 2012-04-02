@@ -1,8 +1,11 @@
 (function(){
   $('.tooltip-list a').tooltip({
-    placement: 'right'
+    placement : 'right'
   });
   $('a.hint').tooltip({
-    placement: 'bottom'
+    placement : 'bottom'
+  });
+  $('.carousel').carousel({
+    interval : 4000
   });
 })();
