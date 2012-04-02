@@ -161,10 +161,9 @@ article p, .tab-content p {
 }
 
 .sect {
-  p{ 
-    font-size: 14px;
-    padding: 0 20px;
-  }
+  h2, h3, h4, h5, h6, p, ol { padding: 0 20px; }
+  h4 { overflow: hidden; }
+  p { font-size: 14px; }
   figure {
     margin: 0;
     width: 200px;
@@ -216,5 +215,12 @@ article p, .tab-content p {
       height: 100%;
       font-size: 1em;
     }
+  }
+}
+
+.thumbnail {
+  @include single-transition(all, 0.2s, linear);
+  &:hover {
+    @include rotate(-5deg);
   }
 }

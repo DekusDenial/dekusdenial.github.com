@@ -42,7 +42,7 @@ body, p{
 
 .navbar-fixed-top {
   border-bottom: 1px solid #666;
-  @include box-shadow(#7db9e8 0 0 0 5px);
+  @include box-shadow(#7db9e8 0px 5px -5px 5px);
 }
 
 .icon-white {
@@ -58,4 +58,14 @@ body, p{
 
 .carousel-control {
   top: 50%;
+}
+
+.thumbnail {
+  padding: 10px;
+  @include box-shadow(rgba(0,0,0,0.3) 0 1px 10px 2px);
+  img {
+    padding: 1px;
+    border: 2px solid #ddd;
+    max-width: 98%;
+  }
 }

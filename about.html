@@ -41,7 +41,14 @@
 
   <div class="content container-fluid well">
     <header>
-      <h1 class="shadows-into-light">About Me</h1>
+      <h1 class="shadows-into-light">About Me
+        <span class="pull-right">
+          <a title="My Facebook" style="width: 32px; height: 32px; display: inline-block;" class="hint sprite-facebook_ico" href="https://www.facebook.com/DekusDenial"></a>
+          <a title="My Twitter" style="width: 32px; height: 32px; display: inline-block;" class="hint sprite-twitter_ico" href="https://twitter.com/#!/DekusDenial"></a>
+          <a title="My LinkedIn" style="width: 32px; height: 32px; display: inline-block;" class="hint sprite-linkedin_ico" href="http://www.linkedin.com/pub/dekus-lam/47/3b3/88b"></a>
+          <a title="My Gmail" style="width: 32px; height: 32px; display: inline-block;" class="hint sprite-gplus_ico" href="mailto:dekusdenial@gmail.com"></a>
+        </span>
+      </h1>
     </header>
     <hr>
     <section class="sect">
@@ -216,26 +223,6 @@
 <script src="js/bootstrap-collapse.js"></script>
 <script src="js/bootstrap-carousel.js"></script>
 <script src="js/bootstrap-typeahead.js"></script>
-<script type="text/javascript">
-  var $win = $(window)
-      , $nav = $('.subnav')
-      , navTop = $('.subnav').length && $('.subnav').offset().top - 40
-      , isFixed = 0
-
-    processScroll()
-
-    $win.on('scroll', processScroll)
-
-    function processScroll() {
-      var i, scrollTop = $win.scrollTop()
-      if (scrollTop >= navTop && !isFixed) {
-        isFixed = 1
-        $nav.addClass('subnav-fixed')
-      } else if (scrollTop <= navTop && isFixed) {
-        isFixed = 0
-        $nav.removeClass('subnav-fixed')
-      }
-    }
-</script>
+<script src="js/application.js"></script>
 </body>
 </html>
