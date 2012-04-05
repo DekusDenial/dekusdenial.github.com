@@ -32,6 +32,13 @@
   line-height: 2.7em;
 }
 
+.IN-widget, iframe[class^="twitter"] {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+  padding: 0;
+}
+
 #twitter_update_list {
   list-style: none;
   margin-left: 110px;
