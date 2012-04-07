@@ -45,6 +45,14 @@ body, p{
   @include box-shadow(#7db9e8 0px 5px -5px 5px);
 }
 
+.nav-tabs > li > a {
+  @include single-transition(all, 0.1s, linear);
+  &:hover {
+    margin-top: -10px;
+    padding-bottom: 18px;
+  }
+}
+
 .icon-white {
 	background-image: image-url("glyphicons-halflings-white.png");
 }
